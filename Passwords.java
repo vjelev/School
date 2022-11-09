@@ -8,14 +8,13 @@ public class Passwords {
 		int n = scanner.nextInt();
 		int L = scanner.nextInt();
 
-		String output = "";
 		for (int i = 1; i < n; i++) {
-			output = Integer.toString(i);
+			String output = Integer.toString(i);
 			for (int j = 1; j <= n; j++) {
 				output += Integer.toString(j);
-				for (char k = 'a'; k < (int) 'a' + L; k++) {
+				for (char k = 'a'; k < (int)'a' + L; k++) {
 					output += k;
-					for (char l = 'a'; l < (int) 'a' + L; l++) {
+					for (char l = 'a'; l < (int)'a' + L; l++) {
 						output += l;
 						for (int m = 1; m <= n; m++) {
 							if (m > i && m > j) {
